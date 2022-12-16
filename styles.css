@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+  display: grid;
+  place-content: center;
+  background-color: #fafaff;
+}
+
+button {
+  font-family: 'Varela Round', sans-serif;
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.rank-card {
+  width: 30rem;
+  background-color: white;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.share-btn {
+  color: #ffffff;
+  padding: 0.4rem 0.6rem;
+  border-radius: 50px;
+  background-color: #fd5c77;
+  font-size: 20px;
+  width: 60px;
+  box-shadow: 0px 2px 0px 0px rgba(223, 43, 119, 0.9);
+  transition: all 0.3s;
+}
+
+.share-btn:hover {
+  background-color: rgba(230, 43, 119, 0.9);
+}
+
+.user-list .user {
+  padding: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.user-list .user:hover {
+  cursor: pointer;
+  box-shadow: 0px 7px 3px -4px rgba(0, 0, 0, 0.1);
+  transform: scale(1.03);
+}
+
+.user-list .first {
+  padding: 1.3rem 2rem;
+  width: 31.3rem;
+  box-sizing: border-box;
+  background-color: #5f57d1;
+  color: #fff;
+  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  left: -10px;
+}
+
+.first:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid #462ddf;
+  border-top: 5px solid #462ddf;
+  border-bottom: 5px solid transparent;
+  transition: all 0.3s;
+}
+
+.first:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  border-left: 5px solid #462ddf;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #462ddf;
+  border-bottom: 5px solid transparent;
+}
+
+.highlight {
+  background-color: #fafafb;
+}
+
+.rank-number {
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+}
+
+.score img {
+  margin-left: 10px;
+}
+
+.card-footer {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-footer button {
+  width: 150px;
+  padding: 8px 0px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: 1.1rem;
+  color: #7c8490;
+}
+
+.card-footer .continue-btn {
+  background-color: #5f57d1;
+  color: #ffffff;
+  box-shadow: 0px 3px 0px 0px rgba(70, 45, 223, 0.9);
+  transition: all 0.3s;
+}
+
+.card-footer .continue-btn:hover {
+  background-color: rgb(70, 45, 223);
+}
+
+@media (max-width: 600px) {
+  .rank-card {
+    width: 24rem;
+  }
+
+  .user-list .first {
+    width: 25.3rem;
+  }
+}
